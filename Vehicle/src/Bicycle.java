@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Bicycle extends Vehicle {
 	private int gears;
 
-	// konstruktører
+	// konstruktï¿½rer
 	public Bicycle(){}
 	public Bicycle(String name, String color, int price, int model,
 			String serialNr, int gears, int direction) {
@@ -31,7 +31,11 @@ public class Bicycle extends Vehicle {
 	    System.out.println("Antall gir: ");
 	    this.gears = scan.nextInt();
     }
- 
+    public void setAllFields2() {
+    	super.setAllFields();	
+	    System.out.println("Antall gir: ");
+	    this.gears = scan.nextInt();
+    }
      public String toString() {
         String ret = super.toString();
         ret += "\ngir:\t\t" + gears; 
@@ -41,6 +45,11 @@ public class Bicycle extends Vehicle {
     	System.out.println("Bicycle turning right: ");
     }
     public void turnLeft(int degrees) {
+    	System.out.println("Bicycle turning left: ");
+    	System.out.println("Bicycle turning left: ");
+    	System.out.println("Bicycle turning left: ");
+    	System.out.println("Bicycle turning left: ");
+    	System.out.println("Bicycle turning left: ");
     	System.out.println("Bicycle turning left: ");
     }
 	public void drive() {
