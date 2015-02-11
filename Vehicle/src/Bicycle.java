@@ -31,7 +31,9 @@ public class Bicycle extends Vehicle {
 	    System.out.println("Antall gir: ");
 	    this.gears = scan.nextInt();
     }
+
     public void setAllFields2() {
+
     	super.setAllFields();	
 	    System.out.println("Antall gir: ");
 	    this.gears = scan.nextInt();
@@ -46,11 +48,11 @@ public class Bicycle extends Vehicle {
     }
     public void turnLeft(int degrees) {
     	System.out.println("Bicycle turning left: ");
-    	System.out.println("Bicycle turning left: ");
-    	System.out.println("Bicycle turning left: ");
-    	System.out.println("Bicycle turning left: ");
-    	System.out.println("Bicycle turning left: ");
-    	System.out.println("Bicycle turning left: ");
+	 	if (degrees <= 360) {
+		  	direction -= degrees; 
+		  	if (direction < 0) direction += 360;	
+		}
+
     }
 	public void drive() {
 		System.out.println("Bicycle drive method ");
