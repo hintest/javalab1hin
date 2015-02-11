@@ -48,11 +48,12 @@ public class Bicycle extends Vehicle {
 		  	direction += degrees; 
 		  	if (direction > 360) direction -= 360;	
 		}
-    	System.out.println("Bicycle turning right: ");
-    	System.out.println("Bicycle turning right: ");
-    	System.out.println("Bicycle turning right: ");
-    	System.out.println("Bicycle turning right: ");
-    	System.out.println("Bicycle turning right: ");
+		// faulty logic
+		if (degrees >= 360) {
+		  	direction -= degrees; 
+		  	if (direction < 360) direction += 360;	
+		}
+		//end
     }
     public void turnLeft(int degrees) {
     	System.out.println("Bicycle turning left: ");
