@@ -45,6 +45,11 @@ public class Bicycle extends Vehicle {
     }
     public void turnRight(int degrees) {
     	System.out.println("Bicycle turning right: ");
+    	System.out.println("Bicycle turning right: ");
+    	System.out.println("Bicycle turning right: ");
+    	System.out.println("Bicycle turning right: ");
+    	System.out.println("Bicycle turning right: ");
+    	System.out.println("Bicycle turning right: ");
     }
     public void turnLeft(int degrees) {
     	System.out.println("Bicycle turning left: ");
